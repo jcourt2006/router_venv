@@ -26,7 +26,7 @@ def show_routers():
 # http://127.0.0.1/interfaces/Loopback334
 @app.route('/interfaces')
 def show_interfaces():
-    return flask.request
+    return flask.render_template("service.html", service_name="the home page of Julio")
 
 # http://127.0.0.1/interfaces/Loopback334
 @app.route('/interfaces/<device_name>')
