@@ -1,0 +1,47 @@
+{
+    "10.0.178.2": {
+        "name": "Paris",
+        "interfaces": [
+            {
+                "name": "GigabitEthernet1",
+                "ip": "10.10.20.44",
+                "up": true
+            },
+            {
+                "name": "GigabitEthernet2",
+                "ip": "10.10.20.45",
+                "up": false
+            }
+        ]
+    },
+    "10.0.178.3": {
+        "name": "Amsterdam",
+        "interfaces": [
+            {
+                "name": "GigabitEthernet1",
+                "ip": "10.10.40.13",
+                "up": true
+            },
+            {
+                "name": "GigabitEthernet2",
+                "ip": "10.10.40.15",
+                "up": true
+            }
+        ]
+    },
+    "10.0.178.4": {
+        "name": "Berlin",
+        "interfaces": [
+            {
+                "name": "GigabitEthernet1",
+                "ip": "10.10.40.133",
+                "up": true
+            },
+            {
+                "name": "Loopback12345",
+                "ip": "10.10.40.15",
+                "up": false
+            }
+        ]
+    }
+}

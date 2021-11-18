@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Routers</title>
+</head>
+<body>
+<h1>Routers</h1>
+<ul>
+{% for router_key in routers %}
+    <li>{{ router_key }}   {{ routers[router_key]['name'] }}
+        <ul>
+        {% for interface in routers[router_key]['interfaces'] %}
+            <li>{{ interface['name'] }} {{ interface['up'] }} {%- if not interface['up'] %} <b style="color:  #002aff;"> <----OEI! </b> {% endif %}</li>
+        {% endfor %}
+        </ul>
+    </li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
