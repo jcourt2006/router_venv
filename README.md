@@ -1,3 +1,5 @@
+Cursus Python 3 automation
+
 python -m venv router_venv
 
 activivate virtual environment
